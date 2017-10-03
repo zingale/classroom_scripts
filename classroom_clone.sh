@@ -54,6 +54,7 @@ else
     while read line
     do
 	name=${assignment}-${line}
+        echo "git clone ${classroom}${name}"
 	git clone ${classroom}${name}
     done < $file
 fi
