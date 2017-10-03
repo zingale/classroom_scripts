@@ -43,7 +43,7 @@ else
 
     #set parameters to more obvious variable names
     if [[ $USE_SSH -eq 1 ]]; then
-        classroom="ssh://github.com/"$1"/"
+        classroom="git@github.com:${1}/"
     else
         classroom="https://github.com/"$1"/"
     fi
